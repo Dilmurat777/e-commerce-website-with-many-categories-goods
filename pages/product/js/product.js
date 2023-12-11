@@ -66,7 +66,9 @@ function getOneProduct() {
 getOneProduct()
 
 
-
+addFavoritesBtn.addEventListener('click', function(){
+ 	
+})
 
 
 

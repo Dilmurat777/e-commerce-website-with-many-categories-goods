@@ -590,3 +590,122 @@ body {
   background-color: #191919;
   padding: 30px;
 }
+
+
+
+/* Auth */
+
+.auth {
+  background-color: #111111;
+  width: 60%;
+  padding: 30px;
+}
+.sign__box {
+  display: flex;
+  flex-direction: column;
+}
+.sign__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sign__title {
+  color: #8B57C6;
+  font-size: 30px;
+}
+
+.sign__btn-top {
+  padding: 10px 20px;
+  background-color: #212123;
+  border: 1px solid #576067;
+  outline: none;
+  color:#616E74;
+  border-radius: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 15px;
+  background-color: #212123;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.form input::placeholder {
+  color: #e2e2e2;
+}
+
+.sing__btns-down {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sign__down-btn {
+  display: block;
+  padding: 15px;
+  color: #111111;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign__toggle-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign__toggle{
+  display: flex;
+}
+
+.toggle__button {
+  background: #616E74;
+  width: 60px;
+  height: 35px;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: transform .3s ease;
+}
+
+.toggle__button::before {
+  position: absolute;
+  content: '';
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  margin: 5px;
+  transition: transform .3s ease;
+}
+
+input:checked + .toggle__button {
+  background-color: #363639;
+}
+input:checked + .toggle__button::before {
+  transform: translateX(25px);
+}
+
+#check {
+  display: none;
+}
+
+.sign__text {
+  color: #616E74;
+  font-size: 15px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
